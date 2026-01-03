@@ -66,16 +66,16 @@ h6 {
     position: absolute;
     top: 100%;
     left: 50%;
-    width: 120%;
+    width: 150%;
     aspect-ratio: 1/1;
     transform: translateX(-50%);
     background-color: var(--text-color);
     border-radius: 50%;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in 0.5s;
   }
   & span,
   & i {
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in 0.3s;
     z-index: 1;
   }
 }
@@ -566,6 +566,10 @@ h6 {
   }
 }
 
+.lower-footer .right {
+  position: relative;
+}
+
 .lower-footer .right select {
   padding: 1.3rem 2.5rem;
   width: 200px;
@@ -575,7 +579,16 @@ h6 {
   color: var(--bg-color);
   font-size: 1.5rem;
   font-weight: 700;
+  appearance: none;
   & option {
     color: var(--text-color);
   }
+}
+
+.lower-footer .right i {
+  color: var(--white-color);
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
+  right: 9%;
 }

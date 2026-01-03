@@ -8,7 +8,7 @@
 :root {
   --white-color: #fff;
   --black-color: #2b2b2b;
-  --assets-color: orange;
+  --assets-color: #b00321;
   --text-color: rgb(104, 104, 104);
 }
 
@@ -16,6 +16,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  background: #fcf5eb;
 }
 
 img {
@@ -29,7 +30,7 @@ main {
 
 .store-container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1280px;
   min-height: 100%;
   padding: 40px 20px;
   margin-inline: auto;
@@ -51,7 +52,7 @@ main {
 }
 
 .shoe-card {
-  width: 30%;
+  width: 23%;
   padding: 10px;
   border-radius: 20px;
   border: 1px solid rgb(214, 214, 214);
@@ -87,7 +88,7 @@ main {
 }
 
 .shoe-description p {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .shoe-description p:first-child,
@@ -101,17 +102,63 @@ main {
   cursor: pointer;
 }
 
-@media (max-width: 992px) {
-    .shoe-card {
-        width: 45%;
-    }
-}
+/* 
+===================================
+         Responsiveness
+===================================
+*/
 
-@media (max-width: 600px) {
-    .heading {
-        font-size: 38px;
-    }
-    .shoe-card {
-        width: 100%;
-    }
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .shoe-card {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .shoe-card {
+    width: 30%;
+  }
+  .shoe-container {
+    gap: 20px;
+  }
+  .shoe-detail .shoe-cart-icon img {
+    width: 35px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .shoe-card {
+    width: 45%;
+  }
+  .shoe-container {
+    gap: 15px;
+  }
+  .heading {
+    font-size: 46px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .shoe-card {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    padding: 15px;
+  }
+  .shoe-card .shoe-image {
+    width: 50%;
+  }
+  .shoe-card .shoe-detail {
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .shoe-detail .shoe-cart-icon img {
+    width: 30px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .shoe-description p {
+    font-size: 14px;
+  }
 }
