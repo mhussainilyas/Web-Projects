@@ -61,6 +61,7 @@ h6 {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+
   &::after {
     content: "";
     position: absolute;
@@ -73,6 +74,7 @@ h6 {
     border-radius: 50%;
     transition: all 0.4s ease-in 0.5s;
   }
+
   & span,
   & i {
     transition: all 0.4s ease-in 0.3s;
@@ -86,6 +88,7 @@ h6 {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   & span,
   & i {
     color: var(--bg-color);
@@ -135,8 +138,10 @@ h6 {
   display: flex;
   align-items: center;
   gap: 3.2rem;
+
   & a {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -149,6 +154,7 @@ h6 {
       transition: all 0.4s linear;
       transform-origin: left;
     }
+
     &:hover::after {
       scale: 1;
     }
@@ -197,15 +203,18 @@ h6 {
 
 .hero-container .hero-text {
   width: 30%;
+
   & h1 {
     font-size: 6.8rem;
     font-weight: 400;
     color: var(--bg-color);
   }
+
   & p {
     color: var(--bg-color);
     margin-top: 1rem;
   }
+
   & .hero-btns {
     display: flex;
     gap: 1.5rem;
@@ -219,6 +228,7 @@ h6 {
 
 .hero-images .hero-heart-image {
   position: relative;
+
   & img:last-child {
     position: absolute;
     bottom: -40%;
@@ -258,6 +268,7 @@ h6 {
   0% {
     transform: translateY(80px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -267,9 +278,11 @@ h6 {
   0% {
     opacity: 0;
   }
+
   70% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -279,9 +292,11 @@ h6 {
   0% {
     opacity: 0;
   }
+
   70% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -292,10 +307,12 @@ h6 {
     opacity: 0;
     transform: translateY(80px);
   }
+
   70% {
     opacity: 0;
     transform: translateY(70px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -304,6 +321,7 @@ h6 {
 
 .hero-images .hero-emotion-image {
   position: relative;
+
   & img:last-child {
     position: absolute;
     left: 0;
@@ -377,6 +395,7 @@ h6 {
   display: flex;
   align-items: center;
   gap: 1rem;
+
   & span {
     padding-bottom: 0.15rem;
     border-bottom: 3px solid var(--green-color);
@@ -402,6 +421,7 @@ h6 {
 .second-banner .banner .banner-content button.btn {
   background-color: var(--green-color);
   border: 0.1rem solid var(--text-color);
+
   & span {
     border: none;
     padding: 0;
@@ -416,15 +436,19 @@ h6 {
 .green-banner .banner .banner-content {
   & h2 {
     color: var(--white-color);
+
     & span {
       color: var(--green-color);
     }
   }
+
   & p {
     color: var(--white-color);
   }
+
   & button {
     color: var(--white-color);
+
     & i {
       color: var(--white-color);
     }
@@ -472,42 +496,49 @@ h6 {
   flex-wrap: wrap;
   padding-bottom: 7rem;
 }
+
 .upper-footer .footer-one {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   & img {
     width: 160px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(7441%)
-      hue-rotate(181deg) brightness(112%) contrast(92%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(7441%) hue-rotate(181deg) brightness(112%) contrast(92%);
   }
+
   & button.btn {
     border: none;
+
     &::after {
       background-color: var(--white-color);
     }
+
     &:hover span {
       color: var(--text-color);
     }
+
     &:hover i {
       color: var(--text-color);
     }
   }
 }
 
-.upper-footer > div h3 {
+.upper-footer>div h3 {
   font-size: 1.2rem;
   color: #a8a8a8;
 }
 
-.upper-footer > div ul {
+.upper-footer>div ul {
   margin-top: 3rem;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
+
   & li a {
     color: var(--white-color);
+
     &:hover {
       text-decoration: underline;
     }
@@ -529,6 +560,7 @@ h6 {
   align-items: center;
   flex-wrap: wrap;
   gap: 5rem;
+
   & p,
   & a {
     font-size: 1.2rem;
@@ -541,7 +573,8 @@ h6 {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  & > div.btn {
+
+  &>div.btn {
     width: 2rem;
     aspect-ratio: 1/1;
     display: flex;
@@ -551,15 +584,19 @@ h6 {
     border: 0.1rem solid var(--white-color);
     background-color: var(--text-color);
     transition: all 0.3s linear;
+
     & i {
       color: var(--white-color);
     }
+
     &::after {
       background-color: var(--green-color);
     }
+
     &:hover i {
       color: var(--text-color);
     }
+
     &:hover {
       border-color: var(--text-color);
     }
@@ -580,6 +617,7 @@ h6 {
   font-size: 1.5rem;
   font-weight: 700;
   appearance: none;
+
   & option {
     color: var(--text-color);
   }

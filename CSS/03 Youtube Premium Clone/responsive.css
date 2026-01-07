@@ -1,0 +1,308 @@
+:root {
+  --primary-color: #0f0f0f;
+  --secondary-color: #202021;
+  --heading-color: #f1f1f1;
+  --btn-color: #3ea6ff;
+  --btn-hover-color: #6cbaff;
+  --hover-color: #3f3f3f;
+  --text-color: #858585;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .common-heading {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1024px) {
+  .container {
+    padding: 80px;
+  }
+
+  main .container {
+    padding: 80px 0 0;
+  }
+
+  .common-heading {
+    font-size: 46px;
+    margin-bottom: 80px;
+  }
+
+  main {
+    padding-block: 50px;
+    min-height: auto;
+  }
+
+  .yt-premium-content h1 {
+    font-size: 44px;
+  }
+
+  .yt-premium-footer p,
+  .yt-premium-footer a {
+    font-size: 12px;
+  }
+
+  .features .container {
+    padding-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 100px;
+  }
+
+  .member-box {
+    grid-template-columns: repeat(1, 400px);
+    justify-content: center;
+  }
+
+  .banner-box .banner-item {
+    & h3 {
+      font-size: 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 741px) and (max-width: 850px) {
+  .yt-premium-content h1 {
+    font-size: 44px;
+  }
+
+  .container {
+    padding: 60px;
+  }
+
+  main {
+    min-height: auto;
+  }
+
+  main .container {
+    padding: 100px 50px 50px;
+  }
+
+  .common-heading {
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
+
+  .yt-premium-footer p,
+  .yt-premium-footer a {
+    font-size: 12px;
+  }
+
+  .features .container {
+    grid-template-columns: repeat(1, 350px);
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .member-box {
+    grid-template-columns: repeat(1, 400px);
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .banner-box .banner-item {
+    & h3 {
+      font-size: 32px;
+    }
+  }
+
+  .yt-music .container {
+    flex-direction: column;
+  }
+
+  .yt-music-content {
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+    gap: 18px;
+    & h3 {
+      font-size: 26px;
+    }
+  }
+
+  .yt-music-image {
+    width: 100%;
+    & img {
+      border-radius: 0 0 32px 32px;
+    }
+  }
+
+  .faq-item h3 {
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .container {
+    padding: 50px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .common-heading {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+
+  .header {
+    gap: 5px;
+    padding: 10px 20px;
+  }
+
+  .header .middle-content .input-box {
+    display: none;
+  }
+
+  .header .mobile-search-icon {
+    display: block;
+    & button {
+      background-color: transparent;
+      border: none;
+      font-size: 20px;
+    }
+  }
+
+  .header .middle-content {
+    width: auto;
+  }
+
+  .header .right-content .create-btn {
+    font-size: 14px;
+    padding: 10px 14px;
+    & i {
+      font-size: 14px;
+    }
+  }
+
+  main {
+    width: 100%;
+    min-height: auto;
+    background: linear-gradient(
+        rgba(15, 15, 15, 0),
+        rgba(15, 15, 15, 0),
+        rgba(15, 15, 15, 0),
+        rgba(15, 15, 15, 0)
+      ),
+      url(./assets/mobile-yt-hero-banner.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  main .container {
+    padding: 80px 50px 50px;
+  }
+
+  .yt-premium-content h1 {
+    font-size: 26px;
+  }
+
+  .yt-premium-footer p,
+  .yt-premium-footer a {
+    font-size: 12px;
+  }
+
+  .yt-premium-content button {
+    width: 100%;
+  }
+
+  .features .container {
+    padding-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    & .feature-box {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  .feature-box p {
+    margin-top: 0;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .member-box {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .banner-box .banner-item {
+    flex-direction: column;
+    & h3 {
+      font-size: 30px;
+    }
+  }
+
+  .banner-item:first-child .banner-image {
+    order: 1;
+  }
+
+  .banner-item:first-child .banner-content {
+    order: 2;
+  }
+
+  .banner-item:last-child .banner-image {
+    order: 1;
+  }
+
+  .banner-item:last-child .banner-content {
+    order: 2;
+  }
+
+  .banner-content {
+    width: 100%;
+  }
+
+  .banner-image {
+    width: 100%;
+  }
+
+  .yt-music .container {
+    flex-direction: column;
+  }
+
+  .yt-music-content {
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+    padding: 40px 30px;
+    gap: 18px;
+    & h3 {
+      font-size: 24px;
+    }
+  }
+
+  .yt-music-image {
+    width: 100%;
+    & img {
+      border-radius: 0 0 32px 32px;
+    }
+  }
+
+  .faq .container {
+    padding-inline: 0;
+  }
+
+  .faq-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header .middle-content .mic-btn {
+    display: none;
+  }
+
+  .header .right-content .bell-btn {
+    display: none;
+  }
+
+  main .container {
+    padding: 60px 30px 40px;
+  }
+
+  .container {
+    padding: 50px 30px;
+  }
+}

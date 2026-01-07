@@ -75,7 +75,7 @@ hr {
 .container {
   max-width: 1290px;
   margin-inline: auto;
-  padding: 100px 20px;
+  padding: 100px 80px;
 }
 
 .common-heading {
@@ -101,6 +101,10 @@ hr {
   z-index: 999;
   background: rgba(15, 15, 15, 0.85);
   backdrop-filter: blur(25px);
+}
+
+.header .mobile-search-icon {
+  display: none;
 }
 
 .header > div {
@@ -207,7 +211,7 @@ main {
       rgba(15, 15, 15, 0.6),
       rgba(15, 15, 15, 1)
     ),
-    url(./assets/hero-banner.jpg) no-repeat;
+    url(./assets/hero-banner.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -236,6 +240,7 @@ main .container {
 
 .yt-premium-content button {
   margin-block: 10px;
+  color: var(--primary-color);
 }
 
 .features .container {
@@ -348,6 +353,21 @@ main .container {
   }
 }
 
+.banner-content {
+  width: 50%;
+}
+
+.banner-image {
+  width: 50%;
+  & img {
+    width: 100%;
+  }
+}
+
+.yt-music {
+  width: 100%;
+}
+
 .yt-music .container {
   padding-top: 0;
   display: flex;
@@ -355,6 +375,7 @@ main .container {
 }
 
 .yt-music-content {
+  width: 50%;
   background: url(./assets/multi-bg.jpg) no-repeat;
   background-size: cover;
   padding: 50px;
@@ -375,7 +396,14 @@ main .container {
   }
 }
 
-.yt-music-image img{
+.yt-music-image {
+  width: 50%;
+}
+
+.yt-music-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 0 32px 32px 0;
 }
 
@@ -407,7 +435,8 @@ main .container {
   padding: 60px 30px;
   border-radius: 30px;
   & h2 {
-    font-size: 56px;
+    text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -417,7 +446,6 @@ main .container {
 
 .faq-container .faq-item {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--hover-color);
   padding-block: 20px;
