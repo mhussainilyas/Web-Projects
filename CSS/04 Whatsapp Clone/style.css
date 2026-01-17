@@ -17,6 +17,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -30,6 +31,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 p,
@@ -504,7 +509,8 @@ h6 {
 
   & img {
     width: 160px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(7441%) hue-rotate(181deg) brightness(112%) contrast(92%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(7441%)
+      hue-rotate(181deg) brightness(112%) contrast(92%);
   }
 
   & button.btn {
@@ -524,12 +530,12 @@ h6 {
   }
 }
 
-.upper-footer>div h3 {
+.upper-footer > div h3 {
   font-size: 1.2rem;
   color: #a8a8a8;
 }
 
-.upper-footer>div ul {
+.upper-footer > div ul {
   margin-top: 3rem;
   list-style: none;
   display: flex;
@@ -568,13 +574,13 @@ h6 {
   }
 }
 
-.lower-footer .left .footer-icons {
+.footer-icons {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
 
-  &>div.btn {
+  & > div.btn {
     width: 2rem;
     aspect-ratio: 1/1;
     display: flex;
@@ -629,4 +635,8 @@ h6 {
   top: 47%;
   transform: translateY(-50%);
   right: 9%;
+}
+
+.mobile-footer {
+  display: none;
 }

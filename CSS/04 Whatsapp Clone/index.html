@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whatsapp Clone</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link
       rel="shortcut icon"
       href="./assets/wt-icon.webp"
@@ -22,6 +23,10 @@
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -51,6 +56,18 @@
           </button>
         </div>
       </header>
+
+      <div class="header mobile-header" id="mobile-header">
+        <button class="mobile-menu-icon">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="loading..." />
+        </div>
+        <button class="btn btn-secondary">
+          <span><i class="fa-solid fa-download"></i></span>
+        </button>
+      </div>
 
       <main class="hero-section">
         <div class="hero-banner">
@@ -92,37 +109,20 @@
 
       <section class="with-private">
         <div class="container">
-          <img
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-once="false"
-            src="./assets/with-privacy-1.webp"
-            alt="loading..."
-          />
-          <h2 data-aos="fade-up" data-aos-duration="1500" data-aos-once="false">
+          <img src="./assets/with-privacy-1.webp" alt="loading..." />
+          <h2>
             With private messaging and calling, you can be yourself, speak
             freely and feel close to the most important people in your life no
             matter where they are.
           </h2>
-          <img
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-once="false"
-            src="./assets/with-privacy-2.webp"
-            alt="loading..."
-          />
+          <img src="./assets/with-privacy-2.webp" alt="loading..." />
         </div>
       </section>
 
       <section class="banner-section">
         <div class="container">
           <div class="banner">
-            <div
-              class="banner-content"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-content">
               <h2>Never miss a moment with voice and video calls</h2>
               <p>
                 From a group call to classmates to a quick call with mom, feel
@@ -132,12 +132,7 @@
                 <span>Learn More</span> <i class="fa-solid fa-angle-right"></i>
               </button>
             </div>
-            <div
-              class="banner-image"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-image">
               <img src="./assets/birthday.webp" alt="loading..." />
             </div>
           </div>
@@ -147,12 +142,7 @@
       <section class="banner-section second-banner">
         <div class="container">
           <div class="banner">
-            <div
-              class="banner-content"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-content">
               <h2>
                 Get WhatsApp <br />
                 for Windows
@@ -163,12 +153,7 @@
                 <i class="fa-solid fa-download"></i>
               </button>
             </div>
-            <div
-              class="banner-image"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-image">
               <img src="./assets/window.webp" alt="loading..." />
             </div>
           </div>
@@ -178,12 +163,7 @@
       <section class="banner-section second-banner green-banner">
         <div class="container">
           <div class="banner">
-            <div
-              class="banner-content"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-content">
               <h2>
                 Speak <br />
                 <span>freely</span>
@@ -199,12 +179,7 @@
                 <i class="fa-solid fa-angle-right"></i>
               </button>
             </div>
-            <div
-              class="banner-image"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-image">
               <img src="./assets/speech-freely.webp" alt="loading..." />
             </div>
           </div>
@@ -214,12 +189,7 @@
       <section class="banner-section forth-section">
         <div class="container">
           <div class="banner">
-            <div
-              class="banner-content"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-content">
               <h2>
                 Keep in touch <br />
                 with your groups
@@ -233,12 +203,7 @@
                 <span>Learn More</span> <i class="fa-solid fa-angle-right"></i>
               </button>
             </div>
-            <div
-              class="banner-image"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-image">
               <img src="./assets/group-bg.webp" alt="loading..." />
               <img src="./assets/group.webp" alt="loading..." />
             </div>
@@ -249,12 +214,7 @@
       <section class="banner-section forth-section reverse-row">
         <div class="container">
           <div class="banner">
-            <div
-              class="banner-content"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-content">
               <h2>
                 Say what <br />
                 you feel
@@ -268,12 +228,7 @@
                 <span>Learn More</span> <i class="fa-solid fa-angle-right"></i>
               </button>
             </div>
-            <div
-              class="banner-image"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-image">
               <img src="./assets/feel-bg.webp" alt="loading..." />
               <img src="./assets/feel.webp" alt="loading..." />
             </div>
@@ -284,12 +239,7 @@
       <section class="banner-section">
         <div class="container">
           <div class="banner">
-            <div
-              class="banner-content"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-content">
               <h2>
                 Transform <br />
                 your business
@@ -304,12 +254,7 @@
                 <span>Learn More</span> <i class="fa-solid fa-angle-right"></i>
               </button>
             </div>
-            <div
-              class="banner-image"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-            >
+            <div class="banner-image">
               <img src="./assets/business.webp" alt="loading..." />
             </div>
           </div>
@@ -386,10 +331,81 @@
           </div>
         </div>
       </footer>
+
+      <footer class="footer mobile-footer">
+        <div class="container">
+          <div class="m-footer-btn">
+            <button class="btn btn-secondary">
+              <span>Download</span><i class="fa-solid fa-download"></i>
+            </button>
+          </div>
+          <div class="footer-icons m-footer-social-icons">
+            <div class="btn"><i class="fa-brands fa-x-twitter"></i></div>
+            <div class="btn"><i class="fa-brands fa-youtube"></i></div>
+            <div class="btn"><i class="fa-brands fa-instagram"></i></div>
+            <div class="btn"><i class="fa-brands fa-facebook-f"></i></div>
+          </div>
+          <div class="m-footer-links">
+            <div class="m-footer-logo">
+              <img src="./assets/whatsapp.svg" alt="loading..." />
+            </div>
+            <div class="links">
+              <div>
+                <h3>What we do</h3>
+                <ul>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">For Business</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>What we are</h3>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Brand Center</a></li>
+                  <li><a href="#">Privacy</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Use WhatsApp</h3>
+                <ul>
+                  <li><a href="#">Android</a></li>
+                  <li><a href="#">iphone</a></li>
+                  <li><a href="#">Mac/PC</a></li>
+                  <li><a href="#">Whatsapp Web</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Need help?</h3>
+                <ul>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Apps</a></li>
+                  <li><a href="#">Security Advisories</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="m-footer-copyright">
+            <div class="left-cr-section">
+              <a href="#">sitemap</a>
+              <a href="#">Terms & Privacy Policy</a>
+              <a href="#">2026 © WhatsApp LLC</a>
+            </div>
+            <div class="right-cr-section">
+              <select name="lang" id="lang">
+                <option value="English" selected>English</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Parsian">Parsian</option>
+                <option value="France">France</option>
+              </select>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
