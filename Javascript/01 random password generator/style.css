@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #ffe6e6;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 5rem 2rem;
+  overflow-x: hidden;
+}
+
+.password-container {
+  background-color: #fff;
+  max-width: 500px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.08);
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 3rem;
+  color: #b30000;
+  font-family: "Pacifico", sans-serif;
+}
+
+.input-container {
+  margin-block: 3rem 1.7rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  padding-right: 2rem;
+  overflow: hidden;
+  border: 1px solid #adadad;
+}
+
+.input-container .input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.2rem 2rem;
+  font-size: 1.7rem;
+}
+
+.input-container i {
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #6c6a6a;
+  transition: all 0.3s linear;
+  &:hover {
+    transform: rotate(360deg);
+    color: #000;
+  }
+}
+
+.input-container i:active {
+  transform: scale(0.8);
+}
+
+.password-btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1.2rem 3rem;
+  border: none;
+  background-color: #ff3333;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:hover {
+  background-color: #ff1a1a;
+}
+
+.clear-btn {
+  background-color: #ffae1a;
+}
+
+.clear-btn:hover {
+  background-color: #ffa500;
+}
+
+.alert-copy-password {
+  background-color: #5eed5e;
+  color: white;
+  width: fit-content;
+  padding: 1.4rem 3rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.alert-copy-password.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 60%;
+  }
+
+  .password-container {
+    padding: 3rem 2rem;
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    padding: 1.2rem 2rem;
+  }
+}
