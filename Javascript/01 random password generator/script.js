@@ -21,8 +21,8 @@ function handleGeneratePassword() {
   for (let i = 0; i < passwordLength; i++) {
     let randomIndex = generateRandomIndex();
     password += allCharacters[randomIndex];
-    inputElement.value = password;
   }
+  inputElement.value = password;
 }
 
 function handleCopyPassword() {

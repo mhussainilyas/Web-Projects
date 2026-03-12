@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Text Machine Language",
+      "Hyperlinks and Text Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "correct_answer": "Hyper Text Markup Language"
+  },
+  {
+    "id": 2,
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": ["<a>", "<link>", "<href>", "<hyper>"],
+    "correct_answer": "<a>"
+  },
+  {
+    "id": 3,
+    "question": "Which CSS property is used to change the text color?",
+    "options": ["text-color", "font-color", "color", "background-color"],
+    "correct_answer": "color"
+  },
+  {
+    "id": 4,
+    "question": "Which language is used to add interactivity to a website?",
+    "options": ["HTML", "CSS", "JavaScript", "SQL"],
+    "correct_answer": "JavaScript"
+  },
+  {
+    "id": 5,
+    "question": "Which HTML tag is used to insert an image?",
+    "options": ["<image>", "<img>", "<src>", "<picture>"],
+    "correct_answer": "<img>"
+  },
+  {
+    "id": 6,
+    "question": "Which CSS property controls the size of text?",
+    "options": ["text-size", "font-style", "font-size", "text-style"],
+    "correct_answer": "font-size"
+  },
+  {
+    "id": 7,
+    "question": "Inside which HTML tag do we write JavaScript?",
+    "options": ["<javascript>", "<script>", "<js>", "<code>"],
+    "correct_answer": "<script>"
+  },
+  {
+    "id": 8,
+    "question": "Which symbol is used for comments in JavaScript?",
+    "options": ["//", "<!-- -->", "#", "**"],
+    "correct_answer": "//"
+  },
+  {
+    "id": 9,
+    "question": "Which HTML attribute is used to define inline styles?",
+    "options": ["font", "class", "styles", "style"],
+    "correct_answer": "style"
+  },
+  {
+    "id": 10,
+    "question": "Which CSS property is used to change the background color?",
+    "options": ["color", "background-color", "bgcolor", "background-style"],
+    "correct_answer": "background-color"
+  }
+]
